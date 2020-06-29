@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dan_XLI_Bojana_Backo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Document printing application" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnPrinting" Content="Printing" HorizontalAlignment="Left" Margin="139,178,0,0" VerticalAlignment="Top" Width="179" Height="36" Click="Button_Click" FontSize="18" FontFamily="Source Serif Pro Light"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="179" Height="36" FontSize="18" FontFamily="Source Code Pro Light" Click="btnCancel_Click"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="26" Margin="139,258,0,0" VerticalAlignment="Top" Width="482" ValueChanged="ProgressBar_ValueChanged"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="139,310,0,0" VerticalAlignment="Top" Width="482"/>
+        <TextBox HorizontalAlignment="Left" Height="130" Margin="139,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="482"/>
+
     </Grid>
 </Window>
