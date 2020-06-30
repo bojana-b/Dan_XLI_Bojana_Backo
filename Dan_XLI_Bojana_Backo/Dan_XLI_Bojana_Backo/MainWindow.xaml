@@ -10,8 +10,10 @@
         <Button x:Name="btnPrinting" Content="Printing" HorizontalAlignment="Left" Margin="139,178,0,0" VerticalAlignment="Top" Width="179" Height="36" Click="Button_Click" FontSize="18" FontFamily="Source Serif Pro Light"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="442,178,0,0" VerticalAlignment="Top" Width="179" Height="36" FontSize="18" FontFamily="Source Code Pro Light" Click="btnCancel_Click"/>
         <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="26" Margin="139,258,0,0" VerticalAlignment="Top" Width="482" ValueChanged="ProgressBar_ValueChanged"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="139,310,0,0" VerticalAlignment="Top" Width="482"/>
-        <TextBox HorizontalAlignment="Left" Height="130" Margin="139,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="482"/>
+        <TextBox x:Name="tbText" HorizontalAlignment="Left" Height="130" Margin="139,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="325" TextChanged="tbText_TextChanged"/>
+        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="139,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="31" Width="179"/>
+        <TextBox x:Name="tbPageNumber" HorizontalAlignment="Left" Height="38" Margin="517,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" TextChanged="tbPageNumber_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,42,0,0" TextWrapping="Wrap" Text="Copy number:" VerticalAlignment="Top" Height="23" Width="104"/>
 
     </Grid>
 </Window>
